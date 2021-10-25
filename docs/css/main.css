@@ -1,0 +1,176 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#rootContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: calc(100vh - 2px);
+}
+
+header > h2 {
+  text-align: center;
+  line-height: 1.8;
+  font-size: 3rem;
+}
+
+section.content {
+  flex: 1 1 auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-foot {
+  line-height: 1.8;
+  text-align: center;
+  padding: 12px;
+}
+
+div.login-box {
+  width: 380px;
+  height: 420px;
+  border: 1px solid #ccc;
+  border-top: 0px;
+}
+
+.did-tabs.tabs:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.did-tabs > ul {
+  margin-left: 0;
+}
+
+div.login-inner-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+div.login-inner-wrapper > div {
+  flex: 0 0 auto;
+}
+
+div.login-inner-wrapper.did-hide {
+  display: none;
+}
+
+#loginAccountFrom {
+  padding: 10px;
+  width: 100%;
+}
+
+.login-inner-wrapper label.label {
+  font-weight: 400;
+}
+
+.device-status {
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.device-status > img {
+  width: 65%;
+  height: 65%;
+}
+
+.device-status-back {
+  background: url('../images/device.jpg');
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.device-status > span.status-text {
+  opacity: 1;
+}
+
+#tabDeviceBox > div.device-help-wrapper {
+  flex: 1 1 auto;
+}
+
+/* did switch-tabs */
+div.device-action-wrapper {
+  width: 100%;
+  padding: 12px 6px 12px 24px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.did-switch.tabs:not(:last-child) {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.did-switch > ul {
+  margin-left: 0;
+}
+
+.help-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* border: 1px solid #afe; */
+}
+
+.help-wrapper.button.is-ghost {
+  user-select: none;
+}
+
+.did-modal.modal > div.modal-content {
+  min-height: 120px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px 20px;
+}
+
+.did-modal.modal > div.modal-background {
+  opacity: 0.85;
+}
+
+/* deviceResultContainer */
+#deviceResultContainer {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0px;
+  width: calc(100vw / 2 - 200px);
+  min-height: calc(100vh - 20px);
+
+  /* border: 1px solid #ddd; */
+  z-index: 999;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+div.did-hide {
+  display: none;
+}
+
+#deviceResultContainer.did-hide {
+  display: none;
+}
+
+#deviceResultContainer p.text {
+  word-break: break-all;
+  font-size: 12px;
+}

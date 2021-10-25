@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Did Chain Demo MC100</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="vendors/bulma/bulma.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="vendors/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="rootContainer">
+      <header>
+        <h2>Did 系统登录演示Demo</h2>
+      </header>
+
+      <section class="content">
+        <div class="login-container">
+          <div class="did-tabs tabs is-boxed">
+            <ul>
+              <li id="tabAccount" class="did-tab">
+                <a><span>账号登录</span></a>
+              </li>
+              <li id="tabDevice" class="did-tab is-active">
+                <a><span>设备扫码登录</span></a>
+              </li>
+              <li id="tabQRcode" class="did-tab">
+                <a><span>手机扫码登录</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="login-box">
+            <div class="login-inner-wrapper did-hide" id="tabAccountBox">
+              <form action="#" id="loginAccountFrom">
+                <div class="field">
+                  <label for="username" class="label">登录名称:</label>
+                  <div class="control">
+                    <input
+                      type="text"
+                      class="input"
+                      id="username"
+                      name="username"
+                      placeholder="用户名"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="password" class="label">登录密码:</label>
+                  <div class="control">
+                    <input
+                      type="password"
+                      class="input"
+                      id="password"
+                      name="password"
+                      placeholder="密码"
+                    />
+                  </div>
+                </div>
+
+                <!-- button -->
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">登陆</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-link">取消</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Devidce Container -->
+            <div class="login-inner-wrapper" id="tabDeviceBox">
+              <div class="device-help-wrapper">
+                <span class="auto-validate-state"></span>
+              </div>
+              <div class="device-status">
+                <img src="images/device.jpg" alt="" />
+                <span
+                  class="status-text has-text-success"
+                  id="deviceConnectStatus"
+                >
+                </span>
+              </div>
+
+              <div class="device-action-wrapper">
+                <div
+                  class="did-switch tabs is-toggle is-small is-toggle-rounded"
+                >
+                  <ul>
+                    <li class="light-switch-tab is-active" id="lightOn">
+                      <a><span>开灯</span></a>
+                    </li>
+                    <li class="light-switch-tab" id="lightOff">
+                      <a><span>关灯</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="help-wrapper">
+                  <button
+                    class="button is-small is-ghost is-unselectable"
+                    id="didDeviceHelpBtn"
+                  >
+                    查看设备帮助文档
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- QRcode Container -->
+            <div class="login-inner-wrapper did-hide" id="tabQRcodeBox">
+              <div class="qrcode-container">
+                <img src="images/loginqrcode.png" alt="QRCode" />
+              </div>
+              <div class="qrcode-tips">
+                <span class="has-text-info">请使用身份认证手机App扫码登录</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="copyright-foot">
+          Copyright © 2020-2021 DID Chain. All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+    <div class="did-modal modal" id="didModal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="modal-tips">
+          <span></span>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <div id="deviceResultContainer" class="">
+      <div class="result-box">
+        <h5>扫描结果:</h5>
+        <p class="text"></p>
+      </div>
+    </div>
+  </body>
+</html>

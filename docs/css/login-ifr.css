@@ -1,0 +1,15 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.qrifr-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.qrifr-wrapper > img {
+  width: 100%;
+  height: calc(100% - 20px);
+}

@@ -1,0 +1,31 @@
+.did-help-section {
+  width: 100%;
+}
+
+section.hero h2 {
+  text-align: center;
+}
+
+.did-help-sett > * {
+  line-height: 1.8;
+}
+
+.did-help-sett > h3,
+.did-help-sett > image {
+  padding: 12px 0;
+}
+
+
+
+.did-section ul {
+  padding-left: 2em;
+  list-style: circle;
+}
+
+.did-section > h3,
+.did-section > image {
+  padding: 12px 0px;
+}
+
+.did-help-start {
+}
