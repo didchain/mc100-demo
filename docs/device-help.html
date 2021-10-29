@@ -15,21 +15,22 @@
         <p class="title is-size-2">DID Chain扫码设备使用帮助</p>
       </div>
     </section>
-    <div class="container is-max-desktop">
+    <div class="container is-max-desktop" style="margin-bottom: 6rem">
       <div class="did-section did-help-sett">
-        <h3>一. 首次使用需要先设置设置提示音</h3>
-        <img src="images/set_voice.png" alt="设置" width="220" height="220" />
+        <h3>一. 首次使用需要先扫下面二维码进行初始化设置</h3>
+        <img src="images/jssdk_set.png" alt="设置" width="260" height="260" />
 
         <ul class="did-help-steps">
           <li><span>将设备USB链接到电脑上.</span></li>
-          <li><span>用设备扫描上面二维码,提示音设置完成.</span></li>
+          <li><span>用设备扫描上面二维码,听到提示音后设置完成.</span></li>
+          <li><span>按一下设备后面R键重启.</span></li>
         </ul>
       </div>
 
       <hr />
 
       <div class="did-section did-help-start">
-        <h3>二. 启动扫码驱动程序</h3>
+        <h3>二. 启动扫码器驱动程序</h3>
         <ul class="did-help-steps">
           <li>
             <p>双击软件luac_run.bat文件,启动扫码设备驱动程序</p>
@@ -40,6 +41,26 @@
               刷新登录页面,切换到设备扫码登录Tab页签,此时应显示扫码设备已连接状态.
             </p>
             <img src="images/app_connected.png" alt="连接成功" />
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+      <div class="did-section did-help-start">
+        <h3>三. 测试</h3>
+        <ul class="did-help-steps">
+          <li>
+            <p>
+              在本机扫码器驱动程序已启动状态下,点击开灯/关灯,此时扫码设备背光灯应随之开启或关闭.
+            </p>
+            <p>
+              <span style="font-size: 0.65rem; color: red"
+                >如果:操作无响应,可能因为设备重启或USB拔掉导致驱动程序退出,此时重新启动程序即可.(参考上面第二步)</span
+              >
+            </p>
+          </li>
+          <li>
+            <p>通过设备扫描二维码,识别成功后会在浏览器页面右侧显示扫描结果</p>
           </li>
         </ul>
       </div>
